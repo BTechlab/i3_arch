@@ -1,0 +1,25 @@
+{
+    "bookmarks": [],
+    "recent": [
+        "/home/bob/clone/arch_i3"
+    ],
+    "gui_state": {
+        "mainview": {
+            "y": 334,
+            "maximized": false,
+            "windowstate": "AAAA/wAAAAL9AAAAAwAAAAAAAAK/AAACS/wCAAAAAvsAAAAMAEMAbwBtAG0AaQB0AQAAABcAAACkAAAAXQAAIB/7AAAACABEAGkAZgBmAQAAAL4AAAGkAAAAIAD///8AAAABAAABGQAAAkv8AgAAAAP7AAAADABTAHQAYQB0AHUAcwEAAAAXAAABJAAAAHMA////+wAAABIARgBhAHYAbwByAGkAdABlAHMBAAABPgAAASQAAABzAP////sAAAAMAFIAZQBjAGUAbgB0AAAAAAD/////AAAAcwD///8AAAADAAAAAAAAAAD8AQAAAAH8AAAAAP////8AAAAAAP////r/////AQAAAAL7AAAADgBBAGMAdABpAG8AbgBzAAAAAAD/////AAAAjgD////7AAAADgBDAG8AbgBzAG8AbABlAAAAAAD/////AAAAkgD///8AAAAAAAACSwAAAAQAAAAEAAAACAAAAAj8AAAAAA==",
+            "lock_layout": false,
+            "show_status_filter": false,
+            "x": 0,
+            "height": 610,
+            "width": 987
+        },
+        "finder": {
+            "x": 458,
+            "y": 260,
+            "width": 987,
+            "maximized": false,
+            "height": 610
+        }
+    }
+}
