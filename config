@@ -209,7 +209,7 @@ bindsym $mod+Shift+e exit
 
 set $mode_system System (e) logout, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    #bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
     bindsym e exec --no-startup-id i3-msg exit
     bindsym r exec --no-startup-id "reboot"
     bindsym Shift+s exec --no-startup-id "poweroff"
