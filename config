@@ -11,7 +11,8 @@
 
 set $mod Mod4
 
-set $term xfce4-terminal
+set $term st -t "Simple-Terminal" -f "Source Code Pro:style=Semibold:size=12"
+# st -t "Simple-Terminal" -f "Source Code Pro:style=Semibold:size=12"
 
 #Set gaps
 for_window [class="^.*"] border pixel 2
@@ -142,7 +143,7 @@ bindsym $mod+Shift+0 move container to workspace $wksp10
 
 ###   ASSIGN APPLICATIONS TO A WORKSPACE
 
-assign [class="Conky|Termite|Xfce4-terminal|URxvt"] 	$wksp1
+assign [class="Conky|St|Termite|Xfce4-terminal"] 		$wksp1
 assign [class="Nemo|Thunar"] 							$wksp2
 assign [class="Chromium|Firefox|GitKraken"] 			$wksp3
 assign [class="DesktopEditors"]			 			$wksp4
@@ -168,11 +169,14 @@ for_window [class="Nemo"] focus
 for_window [class="Gnome-calendar"] focus
 for_window [class="Geany"] focus
 for_window [class="MPlayer"] focus
-for_window [class="URxvt"] focus
 for_window [class="GitKraken"] focus
 
 # force floating for all new windows
-for_window [class="Termite|Xfce4-terminal"] floating enable
+for_window [class="St|Termite|Xfce4-terminal"] floating enable
+for_window [class="St|Termite|Xfce4-terminal"] border pixel 3
+
+#for_window [class="urxvt"] border pixel 1
+
 
 # browser pop-ups
 for_window [window_role="pop-up"] floating enable
@@ -262,8 +266,8 @@ exec --no-startup-id volumeicon
 exec --no-startup-id compton --config ~/.compton.conf -b
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-terminal
-exec --no-startup-id thunar
+exec --no-startup-id $term
+# exec --no-startup-id thunar
 
 
 #########   Turn OFF Display Screensaver and Power Timer
