@@ -147,39 +147,40 @@ assign [class="Conky|St|Termite|Xfce4-terminal|feh"] 				$wksp1
 assign [class="Nemo|Thunar"] 										$wksp2
 assign [class="Brave|Chromium|Firefox|GitKraken"] 					$wksp3
 assign [class="DesktopEditors"]			 						$wksp4
-assign [class="Blender|Gimp|Inkscape|Darktable"] 					$wksp5
-assign [class="vlc|Shotcut|MPlayer"] 								$wksp6 
+assign [class="Blender|Gimp|Inkscape|Darktable|Freecad|OpenSCAD"] 	$wksp5
+assign [class="MPlayer|Shotcut|vlc"] 								$wksp6 
 assign [class="Pragha|Spotify"] 									$wksp7
 assign [class="Atom|Code|Geany|Leafpad|"] 							$wksp8
 assign [class="Gnome-calendar|Mailspring"]							$wksp9
+for_window [class="Atom"] focus
 for_window [class="Brave"] focus
 for_window [class="Chromium"] focus
-for_window [class="Thunar"] focus
-for_window [class="Gimp"] focus
-for_window [class="Inkscape"] focus
-for_window [class="Atom"] focus
-for_window [class="DesktopEditors"] focus
-for_window [class="Gthumb"] focus
 for_window [class="Darktable"] focus
+for_window [class="DesktopEditors"] focus
+for_window [class="feh"] focus
+for_window [class="Freecad"] focus
+for_window [class="Geany"] focus
+for_window [class="Gimp"] focus
+for_window [class="GitKraken"] focus
+for_window [class="Gnome-calendar"] focus
+for_window [class="Gthumb"] focus
+for_window [class="Inkscape"] focus
 for_window [class="Mailspring"] focus
-for_window [class="Pragha"] focus
-for_window [class="Shotcut"] focus
-for_window [class="vlc"] focus
+for_window [class="MPlayer"] focus
 for_window [class="Mpv"] focus 
 for_window [class="Nemo"] focus
-for_window [class="Gnome-calendar"] focus
-for_window [class="Geany"] focus
-for_window [class="MPlayer"] focus
-for_window [class="GitKraken"] focus
+for_window [class="OpenSCAD"] focus
+for_window [class="Pragha"] focus
 for_window [class="Ranger"] focus
-for_window [class="feh"] focus
+for_window [class="Shotcut"] focus
+for_window [class="Thunar"] focus
+for_window [class="vlc"] focus
 
 # force floating for all new windows
 for_window [class="Termite|Xfce4-terminal"] floating enable
 for_window [class="Termite|Xfce4-terminal"] border pixel 3
 
 #for_window [class="urxvt"] border pixel 1
-
 
 # browser pop-ups
 for_window [window_role="pop-up"] floating enable
