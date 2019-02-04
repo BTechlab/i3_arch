@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-set $term st -t "Simple-Terminal" -f "Source Code Pro:style=Semibold:size=12"
+set $term st -t "Simple-Terminal" -f "Consolas:style=Semibold:size=12"
 # st -t "Simple-Terminal" -f "Source Code Pro:style=Semibold:size=12"
 
 #Set gaps
@@ -45,7 +45,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-bindsym $mod+Shift+d exec rofi -font "System San Francisco Dispaly 10" -show run
+bindsym $mod+Shift+d exec rofi -font "System San Francisco Dispaly 11" -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -143,15 +143,16 @@ bindsym $mod+Shift+0 move container to workspace $wksp10
 
 ###   ASSIGN APPLICATIONS TO A WORKSPACE
 
-assign [class="Conky|St|Termite|Xfce4-terminal"] 		$wksp1
-assign [class="Nemo|Thunar"] 							$wksp2
-assign [class="Chromium|Firefox|GitKraken"] 			$wksp3
-assign [class="DesktopEditors"]			 			$wksp4
-assign [class="Blender|Gimp|Inkscape|Darktable"] 		$wksp5
-assign [class="vlc|Shotcut|MPlayer"] 					$wksp6 
-assign [class="Pragha|Spotify"] 						$wksp7
-assign [class="Atom|Code|Geany|Leafpad|"] 				$wksp8
-assign [class="Gnome-calendar|Mailspring"]				$wksp9
+assign [class="Conky|St|Termite|Xfce4-terminal|feh"] 				$wksp1
+assign [class="Nemo|Thunar"] 										$wksp2
+assign [class="Brave|Chromium|Firefox|GitKraken"] 					$wksp3
+assign [class="DesktopEditors"]			 						$wksp4
+assign [class="Blender|Gimp|Inkscape|Darktable"] 					$wksp5
+assign [class="vlc|Shotcut|MPlayer"] 								$wksp6 
+assign [class="Pragha|Spotify"] 									$wksp7
+assign [class="Atom|Code|Geany|Leafpad|"] 							$wksp8
+assign [class="Gnome-calendar|Mailspring"]							$wksp9
+for_window [class="Brave"] focus
 for_window [class="Chromium"] focus
 for_window [class="Thunar"] focus
 for_window [class="Gimp"] focus
@@ -170,10 +171,12 @@ for_window [class="Gnome-calendar"] focus
 for_window [class="Geany"] focus
 for_window [class="MPlayer"] focus
 for_window [class="GitKraken"] focus
+for_window [class="Ranger"] focus
+for_window [class="feh"] focus
 
 # force floating for all new windows
-for_window [class="St|Termite|Xfce4-terminal"] floating enable
-for_window [class="St|Termite|Xfce4-terminal"] border pixel 3
+for_window [class="Termite|Xfce4-terminal"] floating enable
+for_window [class="Termite|Xfce4-terminal"] border pixel 3
 
 #for_window [class="urxvt"] border pixel 1
 
