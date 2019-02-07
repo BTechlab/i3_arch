@@ -154,7 +154,7 @@ bindsym $mod+Shift+0 move container to workspace $wksp10
 
 assign [class="Conky|St|Termite|Xfce4-terminal|feh"] 				$wksp1
 assign [class="Nemo|Thunar"] 										$wksp2
-assign [class="Brave|Chromium|Firefox|GitKraken"] 					$wksp3
+assign [class="Brave|Chromium|Firefox|GitKraken|Vivaldi-stable"] 	$wksp3
 assign [class="DesktopEditors"]			 						$wksp4
 assign [class="Blender|Gimp|Inkscape|Darktable|Freecad|OpenSCAD"] 	$wksp5
 assign [class="MPlayer|Shotcut|vlc"] 								$wksp6 
@@ -185,6 +185,7 @@ for_window [class="Ranger"] focus
 for_window [class="Shotcut"] focus
 for_window [class="Thunar"] focus
 for_window [class="vlc"] focus
+for_window [class="Vivaldi-stable"] focus
 
 # force floating for all new windows
 for_window [class="Termite|Xfce4-terminal"] floating enable

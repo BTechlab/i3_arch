@@ -77,8 +77,8 @@ volume-max = #bf616a
 [bar/mainbar-i3]
 ;https://github.com/jaagr/polybar/wiki/Configuration
 
-monitor = ${env:MONITOR}
-monitor-fallback = HDMI1
+monitor = DVI-I-1
+monitor-fallback = DVI-I-1
 monitor-strict = false
 override-redirect = false
 bottom = false
@@ -117,8 +117,8 @@ font-0 = NotoSans-Regular:size=10;0
 font-1 = fontawesome-regular:size=10:0
 font-2 = NotoMono-Regular: size=10;0
 
-modules-left = i3 xwindow
-modules-center = networkspeedup networkspeeddown
+modules-left = jgmenu i3 xwindow
+modules-center = pacman-updates weather
 modules-right = memory2 cpu2 date
 
 separator = |
@@ -1071,7 +1071,7 @@ format-connected-background = ${colors.background}
 
 [module/pacman-updates]
 type = custom/script
-;exec = pacman -Qu | wc -l
+#exec = pacman -Qu | wc -l
 exec = checkupdates | wc -l
 interval = 1000
 label = Repo: %output%
