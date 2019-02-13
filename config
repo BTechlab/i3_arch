@@ -11,7 +11,8 @@
 
 set $mod Mod4
 
-set $term st -t "Simple-Terminal" -f "Consolas:style=Semibold:size=12"
+set $term xfce4-terminal
+# set $term st -t "Simple-Terminal" -f "Consolas:style=Semibold:size=12"
 # st -t "Simple-Terminal" -f "Source Code Pro:style=Semibold:size=12"
 
 #Set gaps
@@ -120,14 +121,14 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 10 px or 10 ppt
 
 ### switch to workspace VARIABLES ###
 
-set $wksp1 "1_Term"
-set $wksp2 "2_File"
-set $wksp3 "3_Web"
-set $wksp4 "4_Ofc"
-set $wksp5 "5_Pix"
-set $wksp6 "6_Video"
-set $wksp7 "7_Music"
-set $wksp8 "8_Coding"
+set $wksp1 "1 Term"
+set $wksp2 "2 File"
+set $wksp3 "3 Web"
+set $wksp4 "4 Ofc"
+set $wksp5 "5 Pix"
+set $wksp6 "6 Video"
+set $wksp7 "7 Music"
+set $wksp8 "8 Code"
 set $wksp9 "9_"
 set $wksp10 "10_"
 
@@ -162,7 +163,7 @@ assign [class="Nemo|Thunar"] 										$wksp2
 assign [class="Brave|Chromium|Firefox|GitKraken|Vivaldi-stable"] 	$wksp3
 assign [class="DesktopEditors"]			 						$wksp4
 assign [class="Blender|Gimp|Inkscape|Darktable|Freecad|OpenSCAD"] 	$wksp5
-assign [class="MPlayer|Shotcut|vlc"] 								$wksp6 
+assign [class="mpv|MPlayer|Shotcut|vlc"] 							$wksp6 
 assign [class="Pragha|Spotify"] 									$wksp7
 assign [class="Atom|Code|Geany|Leafpad|"] 							$wksp8
 assign [class="Gnome-calendar|Mailspring"]							$wksp9
