@@ -193,17 +193,16 @@ for_window [class="Thunar"] focus
 for_window [class="vlc"] focus
 for_window [class="Vivaldi-stable"] focus
 
-# force floating for all new windows
-for_window [class="St|Termite|Xfce4-terminal"] floating enable
-for_window [class="Termite|Xfce4-terminal"] border pixel 2
+### force floating for all new windows   ###
+for_window [class="St|Termite|Xfce4-terminal"] floating enable, border normal, move position center resize set 1200 600
 
-#for_window [class="urxvt"] border pixel 1
-
-# browser pop-ups
-for_window [window_role="pop-up"] floating enable
-
-#for_window [class="Firefox"] move container to workspace 2
-#exec --no-startup-id firefox
+# popups
+for_window [window_role="pop-up"] floating enable, border normal
+for_window [window_role="task_dialog"] floating enable, border normal
+for_window [window_role="bubble"] floating enable, border normal
+for_window [window_role="Preferences"] floating enable, border normal
+for_window [window_role="gimp-preferences"] floating enable, border normal
+for_window [window_type="menu"] floating enable, border normal
 
 # #---Function Buttons---# #
 bindsym $mod+F1		exec --no-startup-id chromium
